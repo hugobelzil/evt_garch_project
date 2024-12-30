@@ -18,7 +18,7 @@ The study involves:
 1. Theoretical analysis of GARCH(1,1) models' tail behavior using Breiman's Lemma and results on regular variation.
 2. Tail-index computation for GARCH models with different innovation distributions (Gaussian, Student's t, and Generalized Hyperbolic).
 3. Application of these results to the Dow Jones daily log-return dataset.
-4. Comparison with the Block Maxima method for extreme value analysis.
+4. Comparison with the Block Maxima method for extreme value analysis using different sizes for blocks.
 
 ---
 
@@ -34,10 +34,9 @@ The study involves:
 ## Repository Structure
 
 - `Numerical_computations_python/`: Contains the Python code for the tail-index computations. The code was originally created on jupyter notebook (google colab, link available in the commented code)
-- `data/`: Includes datasets, such as the Dow Jones daily log-returns.
-- `figures/`: Plots and visualizations generated during the analysis.
-- `results/`: Contains numerical results, including tail-index computations.
-- `report/`: Final project report (PDF), detailing the analysis and results.
+- `data_analysis_R/`: Includes the plain R code for fitting the GARCH models and block-maxima method. Also includes the `.Rmd` for both implementations.
+- `plots_python/`: Plots generated during the analysis (coded in Python, google colab link available in the comments)
+- `evt_garch_finalproject.pdf`: Final project report (PDF), detailing the analysis and results.
 - `README.md`: Project overview and instructions (this file).
 
 ---
@@ -45,12 +44,12 @@ The study involves:
 ## Key Findings
 
 1. **Tail-Index Estimations**:  
-   - Gaussian innovations: Tail index \( \kappa = 5.67 \)  
-   - Student’s t-distributed innovations: Tail index \( \kappa = 4.85 \)  
-   - Generalized Hyperbolic innovations: Tail index \( \kappa = 4.46 \)  
+   - Gaussian innovations: Tail index \( &kappa; = 5.67 \)  
+   - Student’s t-distributed innovations: Tail index \( &kappa; = 4.85 \)  
+   - Generalized Hyperbolic innovations: Tail index \( &kappa; = 4.46 \)  
 
 2. **Best-Fit Model**:  
-   The GARCH(1,1) model with Generalized Hyperbolic innovations provided the most accurate fit for the Dow Jones data.
+   The GARCH(1,1) model with Generalized Hyperbolic innovations seems to provide the most accurate fit for the Dow Jones data.
 
 3. **Block Maxima Method Limitations**:  
    Found to be less suitable for financial data due to time-dependence and clustering in extremes.
@@ -59,12 +58,12 @@ The study involves:
 
 ## Results
 
-Detailed results, including the numerical outputs and visualizations, are available in the `results/` and `figures/` directories. The final report, `report/evt_garch_finalproject.pdf`, provides an in-depth explanation of the methods and findings. If you notice any typo or mistake of any kind, please let me know hugo [dot] belzil [at] mail.mcgill.ca!.
+Detailed results, including the numerical outputs and visualizations, are available in the `Numerical_computations_python/` and `data_analysis_R/` directories. The final report, `evt_garch_finalproject.pdf`, provides an in-depth explanation of the methods and findings. If you notice any typo or mistake of any kind, please let me know hugo [dot] belzil [at] mail.mcgill.ca!.
 
 ---
 
 ## Acknowledgments
 
-This project was completed under the supervision of Prof. Johanna Nešlehová for MATH 598 at McGill University. The author acknowledges the contributions of Mikosch & Stǎricǎ (2000) and Embrechts, McNeil, & Frey (2005) for foundational theoretical results.
+This project was completed under the supervision of Prof. Johanna Nešlehová for MATH 598 at McGill University, whom I thank immensely for her help and support. We also acknowledge the contributions of Mikosch & Stǎricǎ (2000) and Embrechts, McNeil, & Frey (2005) for foundational theoretical results.
 
 ---
