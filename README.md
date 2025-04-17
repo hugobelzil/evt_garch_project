@@ -11,9 +11,9 @@
 
 ## Overview
 
-This repository contains the code and analysis for the project "Tail Behavior and Extreme Value Analysis of GARCH(1,1) Models," conducted as part of the MATH 598 course at McGill University. The project investigates the tail behavior and extreme value properties of GARCH(1,1) models, with a particular focus on financial data.
+This repository contains the code and analysis for my final project "Tail Behavior and Extreme Value Analysis of GARCH(1,1) Models," conducted as part of the MATH 598 course at McGill University. The project investigates the tail behavior and extreme value properties of GARCH(1,1) models, with a particular focus on financial data.
 
-The study involves:
+This work involves:
 
 1. Theoretical analysis of GARCH(1,1) models' tail behavior using Breiman's Lemma and results on regular variation.
 2. Tail-index computation for GARCH models with different innovation distributions (Gaussian, Student's t, and Generalized Hyperbolic).
